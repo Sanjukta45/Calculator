@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>variable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "parent-container">
+        <div class ="cal-container">
+            <div class ="result">
+               <h3>45</h3>
+            </div>
+        
+        <div class ="number-container">
+            
+            <button class="box cbox" onclick = "
+            currentDisplay = '';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">C</button>
+            <button class="box 1box" onclick = "
+            currentDisplay = currentDisplay + '1';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">1</button>
+            <button class="box 2box"onclick = "
+            currentDisplay = currentDisplay + '2';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">2</button>
+            <button class="box cbox" onclick = "
+            currentDisplay = currentDisplay + '+';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">+</button>
+            <button class="box 3box" onclick = "
+            currentDisplay = currentDisplay + '3';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">3</button>
+            <button class="box 4box" onclick = "
+            currentDisplay = currentDisplay + '4';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">4</button>
+            <button class="box cbox" onclick = "
+            currentDisplay = currentDisplay + '-';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">-</button>
+            <button class="box" onclick = "
+            currentDisplay = currentDisplay + '5';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">5</button>
+            <button class="box" onclick = "
+            currentDisplay = currentDisplay + '6';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">6</button>
+            <button class="box cbox" onclick = "
+            currentDisplay = currentDisplay + '*';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">*</button>
+            <button class="box" onclick = "
+            currentDisplay = currentDisplay + '7';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">7</button>
+            <button class="box" onclick = "
+            currentDisplay = currentDisplay + '8';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">8</button>
+            <button class="box cbox" onclick = "
+            currentDisplay = currentDisplay + '/';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">/</button>
+            
+            <button class="box equal" onclick = "
+            let result = eval(currentDisplay);
+            currentDisplay = result;
+            document.querySelector('h3').innerText = currentDisplay;
+            ">=</button>
+
+
+            <button class="box" onclick = "
+            currentDisplay = currentDisplay + '9';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">9</button>
+            <button class="box cbox" onclick = "
+            currentDisplay = currentDisplay + '.';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">.</button>
+            <button class="box " onclick = "
+            currentDisplay = currentDisplay + '0';
+            document.querySelector('h3').innerText = currentDisplay;
+            ">0</button>
+        </div>
+    </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
